@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Registro Usuarios Android</string>
+    <string name="btnRegister">Registrar Usuario</string>
+    <string name="btnShow">Mostrar Usuario</string>
+    <string name="btnList">Listar Usuario</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="back">Volver</string>
+    <string name="lblRegister">Registro de Usuarios</string>
+    <string name="lblName">Nombre:</string>
+    <string name="lblSurname">Apellido:</string>
+    <string name="txtNameHint">Nombre:</string>
+    <string name="txtSurnameHint">Apellido:</string>
+    <string name="lblRut">Rut:</string>
+    <string name="txtRutHint">Rut:</string>
+    <string name="lblEdad">Edad:</string>
+</resources>
