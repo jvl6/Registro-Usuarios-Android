@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="0">
+            android:padding="0dp">
 
             <TextView
                 android:id="@+id/lblName"
@@ -101,19 +101,117 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/lblEdad"
+                    android:id="@+id/lblAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/lblEdad" />
+                    android:text="@string/lblAge" />
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/txtAge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autofillHints=""
                     android:ems="10"
+                    android:hint="@string/txtAgeHint"
                     android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblGender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblM" />
+
+                <Switch
+                    android:id="@+id/swGender"
+                    android:layout_width="-20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/lblF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lblF" />
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblDrink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblSoda" />
+
+            <Spinner
+                android:id="@+id/spnDrink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/soft_drinks_array" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnRegister" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblUserCountTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblUserCountTitle" />
+
+            <TextView
+                android:id="@+id/lblUserCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
     </LinearLayout>
+
 </RelativeLayout>

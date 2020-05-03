@@ -12,5 +12,23 @@
     <string name="txtSurnameHint">Apellido:</string>
     <string name="lblRut">Rut:</string>
     <string name="txtRutHint">Rut:</string>
-    <string name="lblEdad">Edad:</string>
+    <string name="lblAge">Edad:</string>
+    <string name="txtAgeHint">Edad:</string>
+    <string name="lblGender">Género:</string>
+    <string name="lblM">Masculino</string>
+    <string name="lblF">Femenino</string>
+    <string name="lblSoda">Bebida Favorita:</string>
+
+    <string-array name="soft_drinks_array">
+        <item>Coca-Cola</item>
+        <item>Pepsi</item>
+        <item>Sprite</item>
+        <item>Bilz</item>
+        <item>Pap</item>
+        <item>Canada Dry</item>
+        <item>7-up</item>
+    </string-array>
+
+    <string name="btnBack">Volver</string>
+    <string name="lblUserCountTitle">Cantidad de Usuarios:</string>
 </resources>
