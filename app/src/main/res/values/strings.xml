@@ -31,4 +31,10 @@
 
     <string name="btnBack">Volver</string>
     <string name="lblUserCountTitle">Cantidad de Usuarios:</string>
+
+    <string name="lblShowTitle">Usuario</string>
+    <string name="showDefault">----</string>
+    <string name="btnPrevious">Anterior</string>
+    <string name="btnNext">Siguiente</string>
+    <string name="lblDefaultNumber">0</string>
 </resources>

@@ -2,6 +2,7 @@ package com.yo.registrousuariosandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yo.registrousuariosandroid.bdStatic.BdStatic;
 import com.yo.registrousuariosandroid.model.User;
@@ -63,7 +65,7 @@ public class RegisterUserActivity extends AppCompatActivity {
                         txtRut.getText().toString(),
                         spnDrink.getSelectedItem().toString(),
                         Integer.parseInt(txtAge.getText().toString()),
-                        spnDrink.isActivated());
+                        swGender.isChecked());
 
                 BdStatic.userList.add(u);
 

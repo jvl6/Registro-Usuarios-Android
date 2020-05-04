@@ -4,6 +4,211 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".ShowUserActivity">
+
+    <TextView
+        android:id="@+id/lblShowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblShowTitle"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/lblRut"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/lblSurname"
+        app:layout_constraintTop_toBottomOf="@+id/lblSurname" />
+
+    <TextView
+        android:id="@+id/lblRut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblRutTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblRutTitle" />
+
+    <TextView
+        android:id="@+id/lblDrinkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/lblSoda"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/lblAge"
+        app:layout_constraintTop_toBottomOf="@+id/lblGender" />
+
+    <TextView
+        android:id="@+id/lblDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblDrinkTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblDrinkTitle" />
+
+    <TextView
+        android:id="@+id/lblGenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/lblGender"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lblRut"
+        app:layout_constraintTop_toBottomOf="@+id/lblRut" />
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblGenderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblGenderTitle" />
+
+    <TextView
+        android:id="@+id/lblAgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/lblAge"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblNameTitle"
+        app:layout_constraintStart_toEndOf="@+id/lblName"
+        app:layout_constraintTop_toBottomOf="@+id/lblRut" />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblAgeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblAgeTitle" />
+
+    <TextView
+        android:id="@+id/lblNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="87dp"
+        android:text="@string/lblName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblRutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblShowTitle" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblNameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblNameTitle" />
+
+    <TextView
+        android:id="@+id/lblSurTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="69dp"
+        android:text="@string/lblSurname"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/showDefault"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lblSurTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblSurTitle" />
+
+    <TextView
+        android:id="@+id/lblNextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lblDefaultNumber"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+    <TextView
+        android:id="@+id/lblCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/lblDefaultNumber"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblPreviousUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/lblDefaultNumber"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/btnPrevious"
+        app:layout_constraintTop_toTopOf="@+id/btnPrevious" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/btnNext"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnBack" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:text="@string/btnPrevious"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnBack" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPreviousUser" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

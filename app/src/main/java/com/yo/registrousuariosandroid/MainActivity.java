@@ -23,10 +23,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init(){
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        this.btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), RegisterUserActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        this.btnShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ShowUserActivity.class);
                 startActivity(i);
                 finish();
             }
